@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fresa | posts</title>
-</head>
-<body>
-    <h1>Halaman posts</h1>
-</body>
-</html>
+
+{{-- @dd($posts) --}}
+
+@extends('layout.main')
+
+
+@section('container')
+    
+@foreach ($posts as $post)
+<article class="mb-5">
+    <h2>
+        <a href="/posts/{{ $post["slug"] }}">{{ $post["title"] }}</a>
+    </h2>
+    <h5> By :{{ $post["author"] }}</h5>
+    <p>{{ $post["body"] }}</p>
+</article>    
+@endforeach
+
+@endsection
+
