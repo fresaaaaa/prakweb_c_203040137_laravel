@@ -1,4 +1,4 @@
-{{-- @dd($post); --}}
+
 @extends('layout.main')
 
 
