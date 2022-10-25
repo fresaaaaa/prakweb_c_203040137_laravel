@@ -44,13 +44,14 @@ class Post
     public static function find($slug)
     {
         $posts = static::all();
+        
         // $posts = [];
         // foreach($posts as $p){
         //     if($p["slug"] === $slug){
         //         $posts = $p;
         //     }
         // }
-        return $posts->firstWhere('slug', $slug);
 
+        return $posts->firstWhere('slug', $slug);
     }
 }
