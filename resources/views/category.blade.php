@@ -1,7 +1,7 @@
 
 {{-- @dd($posts) --}}
 
-@extends('layout.main')
+{{-- @extends('layout.main')
 
 
 @section('container')
@@ -18,4 +18,4 @@
 @endforeach
 
 @endsection
-
+ --}}
