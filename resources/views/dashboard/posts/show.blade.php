@@ -10,13 +10,11 @@
         <a href="" class="btn btn-warning"><span data-feather="edit"></span> Edit</a>
         <a href="" class="btn btn-danger"><span data-feather="x-circle"></span> Delete</a>
 
-        <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" class="img-fluid" alt="{{ $post->category->name }}">
+        <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" class="img-fluid my-3 fs-5" alt="{{ $post->category->name }}">
 
         <article class="my-3 fs-5">
             {!! $post->body !!}
           </article>
-
-            <a href="/blog" class="text-decoration-none d-block mt-3">Back to Blog</a>
         </div>
     </div>
 </div>
